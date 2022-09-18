@@ -1,0 +1,9 @@
+<div class="messages">
+    <h2>Messages:</h2>
+    <div class="row" *ngFor="let msg of arrMessages; let i=index">{{msg}}</div>
+</div>
+
+<div class="text-block">
+    <app-textbox (msgText)="saveMsg($event)"></app-textbox>
+    <button (click)="send()">+</button>
+</div>

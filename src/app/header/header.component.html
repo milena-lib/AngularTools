@@ -1,0 +1,19 @@
+<div class="header">
+  1.<input type="text" #inp />
+  <button (click)="sendMessage(inp.value)">Send Message</button>
+</div>
+
+
+<div class="header">
+  2.<input type="text" [(ngModel)]="inpValue"  />
+  <button (click)="sendValue(inpValue)">Send Message</button>
+</div>
+
+<div class="header">
+  3.<input type="text" [formControl]="inputCtrl"  />
+  <button (click)="send(inputCtrl.value)">Send Input Text</button>
+</div>
+
+
+
+
