@@ -1,0 +1,14 @@
+.messages {
+    margin: 20px;
+}
+.row {
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 6px;
+}
+
+.text-block {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
