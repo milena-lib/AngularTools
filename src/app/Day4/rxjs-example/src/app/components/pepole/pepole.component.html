@@ -1,0 +1,17 @@
+<h1>In progress count = {{count$ | async}}</h1>
+
+<h2>All customers</h2>
+<ol>
+    <li *ngFor="let item of customers$ | async">
+        <button (click)="removecustomer(item)">REMOVE</button> {{item.name}} - {{item.email}} - {{item.status}}
+    </li>
+</ol>
+<button (click)="showInProgresCustomers=true">show InProgresCustomers</button>
+<div *ngIf="showInProgresCustomers">
+    <h2>In progress customers</h2>
+    <ol>
+        <li *ngFor="let item of onlyInProgressItems$ | async">
+            {{item.name}} - {{item.email}} - {{item.status}}
+        </li>
+    </ol>
+</div>
